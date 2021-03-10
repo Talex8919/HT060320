@@ -8,7 +8,7 @@ public abstract class Devices {
     private String serialNumber;
     private Period warranty;
     private boolean isCorporateClient;
-    private int howManyItWasFixed;
+    private int fixCount;
     private String issueOf;
 
     public Devices(String brandName, String nameOfGoods, String serialNumber, Period warranty, boolean isCorporateClient, int howManyItWasFixed, String issueOf) {
@@ -17,7 +17,7 @@ public abstract class Devices {
         this.serialNumber = serialNumber;
         this.warranty = warranty;
         this.isCorporateClient = isCorporateClient;
-        this.howManyItWasFixed = howManyItWasFixed;
+        this.fixCount = fixCount;
         this.issueOf = issueOf;
     }
 
@@ -61,12 +61,12 @@ public abstract class Devices {
         isCorporateClient = corporateClient;
     }
 
-    public int getHowManyItWasFixed() {
-        return howManyItWasFixed;
+    public int getFixCount() {
+        return fixCount;
     }
 
-    public void setHowManyItWasFixed(int howManyItWasFixed) {
-        this.howManyItWasFixed = howManyItWasFixed;
+    public void setFixCount(int fixCount) {
+        this.fixCount = fixCount;
     }
 
     public String getIssueOf() {
@@ -85,7 +85,7 @@ public abstract class Devices {
                 ", serialNumber='" + serialNumber + '\'' +
                 ", warranty=" + warranty +
                 ", isCorporateClient=" + isCorporateClient +
-                ", howManyItWasFixed=" + howManyItWasFixed +
+                ", howManyItWasFixed=" + fixCount +
                 ", issueOf='" + issueOf + '\'' +
                 '}';
     }

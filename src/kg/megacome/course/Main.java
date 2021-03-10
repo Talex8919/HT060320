@@ -219,7 +219,7 @@ SmartPhones prestigioMulti85963= new SmartPhones("Prestigio","Multi85963","Hksus
         while(!laptopsPriorityQueue.isEmpty()) {
             assert laptopsPriorityQueue.peek() != null;
             assert laptopsPriorityQueue.peek() != null;
-            System.out.println(laptopsPriorityQueue.peek().getHowManyItWasFixed()+" Amount of repairing " +" The Brand "+ laptopsPriorityQueue.peek().getBrandName()+" "+
+            System.out.println(laptopsPriorityQueue.peek().getFixCount()+" Amount of repairing " +" The Brand "+ laptopsPriorityQueue.peek().getBrandName()+" "+
                     laptopsPriorityQueue.peek().getNameOfGoods()+" name of  the product " +" ,Serial number: "+ Objects.requireNonNull(laptopsPriorityQueue.poll()).getSerialNumber());
         }
 
